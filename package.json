@@ -1,0 +1,27 @@
+{
+  "name": "fb-analysis-react",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "rm -rf && parcel build public/index.html",
+    "watch": "parcel --port=2021 public/index.html",
+    "predeploy": "yarn build",
+    "deploy": "sudo bash deploy.sh"
+  },
+  "alias": {
+    "#root": "./src"
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.12.4"
+  },
+  "dependencies": {
+    "@material-ui/core": "^4.11.0",
+    "@types/react": "^16.8.6",
+    "canvasjs": "^1.8.3",
+    "react": "^16.8.0",
+    "react-dom": "^16.8.0",
+    "react-files": "^2.4.8",
+    "vader-sentiment": "^1.1.3"
+  }
+}
